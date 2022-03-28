@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body{
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: var(--red) ;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.title{
+    text-align: center;
+    color:#fff;
+    font-size: 1.8rem;
+}
+.description{
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 300;
+}
+.blue-container{
+    text-align: center;
+    background-color: var(--blue);
+    padding: 1em 4em;
+    border-radius: .5rem;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.advertise{
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 300;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 1em;
+    background-color: #fff;
+    gap: 1em;
+    border-radius: 0.5rem;
+}
+.form-container input{
+    width: 100%;
+    padding: .5em;
+}
+.form-container button{
+    width: 100%;
+    padding: 1em;
+    font-size: 1rem;
+    border-radius: .5rem;
+    background-color: var(--green);
+    color: #fff;
+    text-transform:uppercase;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+.term-service{
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--grayish-blue);
+    font-weight: 300;
+}
