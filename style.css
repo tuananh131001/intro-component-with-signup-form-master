@@ -34,6 +34,9 @@ main {
 .red {
     color: var(--red);
 }
+.hidden{
+    display: block;
+}
 
 .text-container{
     width: 100%;
@@ -108,6 +111,15 @@ main {
     font-size: 0.8rem;
     color: var(--grayish-blue);
     font-weight: 300;
+}
+
+.form_error{
+    display: none;
+    width: 100%;
+    font-size: 0.8rem;
+    color: var(--red);
+    text-align: right;
+    font-weight: 700;
 }
 @media screen and (min-width: 35em) {
     body{

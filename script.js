@@ -1,13 +1,9 @@
 const inputFields = document.querySelectorAll("input");
-const submitForm = document.querySelector("button")
-
+const submitForm = document.querySelector("button");
+const errorNotis = document.querySelectorAll(".form_error");
 
 const validateForm = () => {
-  inputFields.forEach((inputField) => {
-    if(inputField.value == "")
-        alert("error")
-  });
+  errorNotis.forEach((errorNoti) => errorNoti.style.display = "block");
 };
 
-
-submitForm.addEventListener("click",validateForm)
+submitForm.addEventListener("click", validateForm);

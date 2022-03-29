@@ -49,13 +49,20 @@
           </div>
         </div>
         <div class="form-container">
-          <input type="text" placeholder="First Name" /><input
-            type="text"
-            placeholder="Last Name"
-          /><input type="email" placeholder="Email Address" name="email" /><input
-            type="text"
-            placeholder="Password"
-          /><button>Claim your free trial</button>
+          <input type="text" placeholder="First Name" required />
+          <div class="form_error"><em>First Name cannot be empty</em></div>
+          <input type="text" placeholder="Last Name" required />
+          <div class="form_error"><em>Last Name cannot be empty</em></div>
+          <input
+            type="email"
+            placeholder="Email Address"
+            name="email"
+            required
+          />
+          <div class="form_error"><em>Looks like this is not an email</em></div>
+          <input type="text" placeholder="Password" required />
+          <div class="form_error"><em>Password cannot be empty</em></div>
+          <button>Claim your free trial</button>
           <h3 class="term-service">
             By clicking the button, you are agreeing to our
             <span class="red bold">Terms and Services</span>
