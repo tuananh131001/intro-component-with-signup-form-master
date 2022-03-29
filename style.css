@@ -23,11 +23,15 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
   gap: 2.5em;
 }
 
 .bold{
     font-weight: bold;
+}
+.red {
+    color: var(--red);
 }
 
 
@@ -39,7 +43,7 @@ main {
 .description{
     text-align: center;
     font-size: 0.8rem;
-    color: #fff;
+    color: rgba(255,255,255,0.8);
     font-weight: 300;
 }
 .blue-container{
@@ -47,6 +51,7 @@ main {
     background-color: var(--blue);
     padding: 1em 4em;
     border-radius: .5rem;
+    box-shadow: 0px 5px 2px rgba(0,0,0,0.2);
 }
 .right-container{
     display: flex;
@@ -64,16 +69,16 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 500px;
-    padding: 1em;
+    padding: 2em;
     background-color: #fff;
     gap: 1em;
     border-radius: 0.5rem;
 }
 .form-container input{
     width: 100%;
-    padding: .5em;
+    padding: 1em;
+    font-weight: bold;
+
 }
 .form-container button{
     width: 100%;
@@ -85,10 +90,36 @@ main {
     text-transform:uppercase;
     font-weight: 300;
     letter-spacing: 0.1rem;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
 }
 .term-service{
     text-align: center;
     font-size: 0.8rem;
     color: var(--grayish-blue);
     font-weight: 300;
+}
+@media screen and (min-width: 48em) {
+    main{
+        flex-direction: row;
+    }
+    .text-container{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title{
+        font-size: 3rem;
+        text-align: left;
+    }
+    .description{
+        font-size: 1rem;
+        text-align: left;
+    }
+    .term-service{
+        width: 80%;
+    }
+    
 }
