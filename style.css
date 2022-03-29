@@ -93,7 +93,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 0.5rem
 }
-.form-container button{
+.submit-button{
     width: 100%;
     padding: 1.2em 1em;
     font-size: 1rem;
@@ -121,7 +121,12 @@ main {
     text-align: right;
     font-weight: 700;
 }
-@media screen and (min-width: 35em) {
+.error-icon{
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+@media screen and (min-width: 42em) {
     body{
         background-image: url(./images/bg-intro-desktop.png);
     }
@@ -149,7 +154,7 @@ main {
     .form-container input{
         padding: 1.5em 2em;
     }
-    .form-container button:hover{
+    .submit-button:hover{
         opacity: 0.8;
         cursor: pointer;
     }

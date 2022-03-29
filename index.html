@@ -48,7 +48,7 @@
             <span class="bold">Try it free 7 days</span> then $20/mo. thereafter
           </div>
         </div>
-        <div class="form-container">
+        <form class="form-container" novalidate>
           <input type="text" placeholder="First Name" required />
           <div class="form_error"><em>First Name cannot be empty</em></div>
           <input type="text" placeholder="Last Name" required />
@@ -57,17 +57,22 @@
             type="email"
             placeholder="Email Address"
             name="email"
+            class="email"
             required
           />
           <div class="form_error"><em>Looks like this is not an email</em></div>
           <input type="text" placeholder="Password" required />
           <div class="form_error"><em>Password cannot be empty</em></div>
-          <button>Claim your free trial</button>
+          <input
+            type="submit"
+            class="submit-button"
+            value="Claim your free trial"
+          />
           <h3 class="term-service">
             By clicking the button, you are agreeing to our
             <span class="red bold">Terms and Services</span>
           </h3>
-        </div>
+        </form>
         <footer>
           <p class="attribution">
             Challenge by
